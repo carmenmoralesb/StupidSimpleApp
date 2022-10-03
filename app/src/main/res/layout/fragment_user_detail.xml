@@ -35,17 +35,17 @@
     android:id="@+id/user_detail__separator__age_description"
     style="@style/Divider"
     android:layout_width="match_parent"
-    android:layout_height="1dp"
-    android:layout_marginTop="16dp"
+    android:layout_height="@dimen/dp1"
+    android:layout_marginTop="@dimen/dp16"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/user_detail__label__main_title" />
 
   <androidx.core.widget.NestedScrollView
     android:id="@+id/user_detail__nested_scroll"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/dp0"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="@dimen/dp20"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@id/user_detail__btn__close">
@@ -56,11 +56,11 @@
 
       <ImageView
         android:id="@+id/user_detail__image__user_image"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="@dimen/dp72"
+        android:layout_height="@dimen/dp72"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
         android:contentDescription="@string/user_list__user_photo_description"
         android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
         style="@style/Text.Bold.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="@dimen/dp16"
         app:layout_constraintStart_toEndOf="@+id/user_detail__image__user_image"
         app:layout_constraintTop_toTopOf="@+id/user_detail__image__user_image"
         tools:text="Carmen Morales" />
@@ -93,7 +93,7 @@
         style="@style/Text.Bold.Body2.Secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/dp16"
         android:text="@string/user_detail__example_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_detail__image__user_image" />
@@ -101,9 +101,9 @@
       <TextView
         android:id="@+id/user_detail__label__description"
         style="@style/Text.Regular.Body1"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="@dimen/dp16"
         android:ellipsize="end"
         android:maxLines="4"
         android:text="@string/user_detail__example_string"
@@ -118,7 +118,7 @@
         style="@style/Text.Bold.Body2.Secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/dp16"
         android:text="@string/user_detail__example_string"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/user_detail__label__description" />
@@ -161,8 +161,8 @@
   <include
     android:id="@+id/user_detail__include__loading"
     layout="@layout/loading"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
+    android:layout_width="@dimen/dp0"
+    android:layout_height="@dimen/dp0"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"

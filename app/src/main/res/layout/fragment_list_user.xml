@@ -9,9 +9,9 @@
   <TextView
     android:id="@+id/user_list__label_error"
     style="@style/Text.Bold.Body2"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/dp0"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="@dimen/dp16"
     android:gravity="center"
     android:text="@string/users__no_users_found"
     android:visibility="gone"
@@ -25,7 +25,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="end|bottom"
-    android:layout_margin="16dp"
+    android:layout_margin="@dimen/dp16"
     android:contentDescription="@string/user_detail__add_user_icon_button"
     android:src="@drawable/ic_plus"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="@dimen/dp16"
     android:text="@string/error_dialog__retry"
     android:visibility="gone"
     app:layout_constraintEnd_toEndOf="parent"
@@ -51,16 +51,16 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="16dp"
-    android:paddingBottom="8dp"
+    android:layout_marginTop="@dimen/dp16"
+    android:paddingBottom="@dimen/dp8"
     android:visibility="gone"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
   <androidx.core.widget.NestedScrollView
     android:id="@+id/user_list__container__main_scroll"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
+    android:layout_width="@dimen/dp0"
+    android:layout_height="@dimen/dp0"
     android:visibility="gone"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:paddingBottom="16dp">
+      android:paddingBottom="@dimen/dp16">
 
       <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/user_list__rv"

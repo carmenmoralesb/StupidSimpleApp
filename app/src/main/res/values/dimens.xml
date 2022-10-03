@@ -10,6 +10,7 @@
   <dimen name="dp24">24dp</dimen>
   <dimen name="dp32">32dp</dimen>
   <dimen name="dp48">48dp</dimen>
+  <dimen name="dp72">72dp</dimen>
   <dimen name="dp100">100dp</dimen>
   <dimen name="dp125">125dp</dimen>
   <dimen name="dp126">126dp</dimen>
