@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/nav_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  app:startDestination="@id/userListFragment">
+
+  <dialog
+    android:id="@+id/userDetailFragment"
+    android:name="es.carmenapps.stupidsimpleapp.ui.fragment.UserDetailFragment"
+    android:label="fragment_user_detail_fragment"
+    tools:layout="@layout/fragment_user_detail">
+
+    <argument
+      android:name="ID"
+      app:argType="string" />
+  </dialog>
+
+  <fragment
+    android:id="@+id/userAddFragment"
+    android:name="es.carmenapps.stupidsimpleapp.ui.fragment.AddUserFragment"
+    android:label="fragment_add_user"
+    tools:layout="@layout/fragment_add_user" />
+
+  <fragment
+    android:id="@+id/userListFragment"
+    android:name="es.carmenapps.stupidsimpleapp.ui.fragment.UserListFragment"
+    android:label="fragment_user_list"
+    tools:layout="@layout/fragment_list_user">
+
+    <action
+      android:id="@+id/action_mainFragment_to_userAddFragment"
+      app:destination="@id/userAddFragment" />
+
+    <action
+      android:id="@+id/action_mainFragment_to_userDetailFragment"
+      app:destination="@id/userDetailFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right">
+
+      <argument
+        android:name="ID"
+        app:argType="string" />
+    </action>
+
+  </fragment>
+</navigation>

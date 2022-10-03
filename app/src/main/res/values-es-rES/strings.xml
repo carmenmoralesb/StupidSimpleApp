@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">StupidSimpleApp</string>
+  <string name="user_list__user_photo_description">Esta es la foto de usuario</string>
+  <string name="user_list__user_id_title">"Identificador: "</string>
+  <string name="user_list__user_name_title">"Nombre: "</string>
+  <string name="user_list__user_bday_title">"Cumpleaños: "</string>
+  <string name="toolbar__reload_option_string">Recargar</string>
+  <string name="toolbar_menu__order_name_option">Ordenar A-Z</string>
+  <string name="toolbar_menu__order_bday_option">Ordenar por fecha</string>
+  <string name="user_detail__edit_btn_string">Editar</string>
+  <string name="user_detail__example_description">Descripción</string>
+  <string name="user_detail__add_user_icon_button">Botón de añadir usuario</string>
+  <string name="user_detail__button_to_edit_user_info">Botón para editar información de usuario</string>
+  <string name="user_detail__button_to_edit_user_information">Botón para editar información de usuario</string>
+  <string name="user_detail__save_user_info_btn">Guardar</string>
+  <string name="user_list__delete_btn">Borrar</string>
+  <string name="user_detail__title_screen">Detalle del usuario</string>
+  <string name="user_detail__close_desc">Botón para cerrar el detalle</string>
+  <string name="error__no_connection">No es posible comunicarse con el servidor. Comprueba tu conexión a internet.</string>
+  <string name="error__server">Hay un error con el servidor.</string>
+  <string name="error__unknown">Parece que ha habido un error.</string>
+  <string name="users__no_users_found">No se han encontrado usuarios. Lo sentimos.</string>
+  <string name="error_dialog__title">Error.</string>
+  <string name="error_dialog__accept">Aceptar</string>
+  <string name="error_dialog__retry">Intentar de nuevo.</string>
+  <string name="main_menu__filter">Menú principal</string>
+  <string name="users__remove_filters">Borrar filtros</string>
+  <string name="user_list__loading_message">Cargando datos de InnoCV API…</string>
+  <string name="user_detail__username_name_title">Nombre:</string>
+  <string name="user_detail__bday_title">"Cumpleaños: "</string>
+  <string name="user_detail__edit_btn">Editar</string>
+  <string name="user_add_dialog_title">Añadir nuevo usuario</string>
+  <string name="user_add_dialog_title_cancel">Cancelar</string>
+  <string name="user_add__succesful_dialog">Usuario añadido!</string>
+  <string name="user_list__delete_dialog">¿Estás seguro de que quieres borrar este usuario?</string>
+  <string name="user_list__delete_dialog_yes">Sí</string>
+  <string name="user_list__delete_dialog_no">No</string>
+  <string name="user_list__delete_dialog_delete_user">Borrar usuario</string>
+</resources>

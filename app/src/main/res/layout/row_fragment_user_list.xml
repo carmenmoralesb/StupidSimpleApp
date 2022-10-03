@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="@dimen/dp8">
+
+  <Button
+    android:id="@+id/add_user__save_btn"
+    style="@style/Widget.Material3.Button"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp48"
+    android:text="@string/user_list__delete_btn"
+    android:textSize="@dimen/sp14"
+    app:layout_constraintBottom_toBottomOf="@+id/row_user__id_title"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.544"
+    app:layout_constraintTop_toTopOf="@+id/row__user_name_placeholder"
+    app:layout_constraintVertical_bias="0.0" />
+
+  <ImageView
+    android:id="@+id/row__user_photo"
+    android:layout_width="@dimen/dp100"
+    android:layout_height="@dimen/dp100"
+    android:background="@color/white"
+    android:contentDescription="@string/user_list__user_photo_description"
+    android:scaleType="centerCrop"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:src="@drawable/ic_no_profile_picture_icon" />
+
+  <TextView
+    android:id="@+id/row_user__name_title"
+    style="@style/Text.Bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp18"
+    android:layout_marginTop="8dp"
+    android:gravity="start"
+    android:text="@string/user_detail__username_name_title"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@id/row__user_photo"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/row__user_name_placeholder"
+    style="@style/Text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="start"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@+id/row_user__name_title"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Carmen Morales" />
+
+  <TextView
+    android:id="@+id/row_user__id_title"
+    style="@style/Text.Bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/user_list__user_id_title"
+    app:layout_constraintStart_toStartOf="@+id/row_user__name_title"
+    app:layout_constraintTop_toBottomOf="@id/row__user_name_placeholder" />
+
+  <TextView
+    android:id="@+id/row__user_id_placeholder"
+    style="@style/Text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/user_list__user_id_title"
+    app:layout_constraintStart_toEndOf="@+id/row_user__id_title"
+    app:layout_constraintTop_toBottomOf="@+id/row__user_name_placeholder"
+    tools:text="34242523" />
+
+  <TextView
+    android:id="@+id/row__user_birthday_title"
+    style="@style/Text.Bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/user_detail__bday_title"
+    app:layout_constraintStart_toStartOf="@+id/row_user__name_title"
+    app:layout_constraintTop_toBottomOf="@+id/row_user__id_title" />
+
+  <TextView
+    android:id="@+id/row__user_birthday_placeholder"
+    style="@style/Text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/user_detail__bday_title"
+    app:layout_constraintStart_toEndOf="@+id/row__user_birthday_title"
+    app:layout_constraintTop_toBottomOf="@+id/row__user_id_placeholder"
+    tools:text="21/12/1998" />
+</androidx.constraintlayout.widget.ConstraintLayout>

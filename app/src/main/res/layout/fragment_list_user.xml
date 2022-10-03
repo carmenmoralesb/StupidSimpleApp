@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:animateLayoutChanges="true">
+
+  <TextView
+    android:id="@+id/user_list__label_error"
+    style="@style/Text.Bold.Body2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:text="@string/users__no_users_found"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/user_list__btn_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom"
+    android:layout_margin="16dp"
+    android:contentDescription="@string/user_detail__add_user_icon_button"
+    android:src="@drawable/ic_plus"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+  <TextView
+    android:id="@+id/user_list__btn_retry"
+    style="@style/Text.Bold.Body2.Secondary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/error_dialog__retry"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/user_list__label_error" />
+
+  <TextView
+    android:id="@+id/user_list__label__filters_applied"
+    style="@style/Text.Bold.Body2.Secondary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="16dp"
+    android:paddingBottom="8dp"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.core.widget.NestedScrollView
+    android:id="@+id/user_list__container__main_scroll"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/user_list__label__filters_applied"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="16dp">
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_list__rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/row_fragment_user_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

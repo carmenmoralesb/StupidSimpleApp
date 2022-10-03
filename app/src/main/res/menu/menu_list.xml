@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+  <item
+    android:id="@+id/reload"
+    android:icon="@drawable/ic_baseline_reload"
+    android:title="@string/toolbar__reload_option_string"
+    app:showAsAction="ifRoom" />
+
+  <item
+    android:id="@+id/filter"
+    android:icon="@drawable/ic_baseline_filter"
+    android:title="@string/main_menu__filter"
+    app:showAsAction="always">
+    <menu>
+      <item
+        android:id="@+id/order_by_name"
+        android:title="@string/toolbar_menu__order_name_option" />
+      <item
+        android:id="@+id/order_by_id"
+        android:title="@string/toolbar_menu__order_bday_option" />
+    </menu>
+  </item>
+
+
+</menu>

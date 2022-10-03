@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="light_purple">#EDA5BC</color>
+  <color name="purple">#c06c86</color>
+  <color name="dark_purple">#83485A</color>
+  <color name="yellow">#CC9173</color>
+  <color name="dark_yellow">#805642</color>
+  <color name="dark_gray">#969696</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="gray">#F0F0F0</color>
+  <color name="loading_background">#E6000000</color>
+  <color name="tertiary">#FFFFFFFF</color>
+</resources>

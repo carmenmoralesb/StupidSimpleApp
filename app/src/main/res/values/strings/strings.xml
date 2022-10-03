@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="app_name">StupidSimpleApp</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="user_list__user_photo_description">This is the user photo</string>
+  <string name="user_list__user_id_title">Identifier :</string>
+  <string name="user_list__user_name_title">Name :</string>
+  <string name="user_list__user_bday_title">Birthday :</string>
+  <string name="toolbar__reload_option_string">reload</string>
+  <string name="toolbar_menu__order_name_option">Order by name</string>
+  <string name="toolbar_menu__order_bday_option">Order by Birthday</string>
+  <string name="user_detail__edit_btn_string">edit</string>
+  <string name="user_detail__example_description">Description</string>
+  <string name="user_detail__example_string">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+    has been the industry\'s standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets containing Lorem Ipsum passages,
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+  <string name="user_detail__add_user_icon_button">Add user icon button</string>
+  <string name="user_detail__button_to_edit_user_info">Button to edit user info</string>
+  <string name="user_detail__button_to_edit_user_information">Button to edit user information</string>
+  <string name="user_detail__save_user_info_btn">save</string>
+  <string name="user_list__delete_btn">Delete</string>
+  <string name="user_detail__title_screen">User detail</string>
+  <string name="user_detail__close_desc">Button to close user detail dialog</string>
+  <string name="error__no_connection">Cannot communicate with the server. Check your internet connection.</string>
+  <string name="error__server">There\'s an error with the server.</string>
+  <string name="error__unknown">It seems there\'s some kind of error.</string>
+  <string name="users__no_users_found">There are not users founded. We\'re sorry :(</string>
+  <string name="error_dialog__title">Error</string>
+  <string name="error_dialog__accept">Accept</string>
+  <string name="error_dialog__retry">Retry</string>
+  <string name="main_menu__filter">Main menu</string>
+  <string name="users__remove_filters">Remove filters</string>
+  <string name="user_list__loading_message">Loading info from InnoCV API…</string>
+  <string name="user_detail__username_name_title">Username: </string>
+  <string name="user_detail__bday_title">Birthday: </string>
+  <string name="user_detail__edit_btn">Edit</string>
+  <string name="user_add_dialog_title">Add new user</string>
+  <string name="user_add_dialog_title_cancel">Cancel</string>
+  <string name="user_add__succesful_dialog">User added!</string>
+</resources>
