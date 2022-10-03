@@ -16,6 +16,7 @@ import es.carmenapps.stupidsimpleapp.data.remote.dto.UserDTO
 import es.carmenapps.stupidsimpleapp.data.repository.Repository
 import kotlinx.coroutines.launch
 import timber.log.Timber
+import java.util.*
 import javax.inject.Inject
 
 @HiltViewModel
@@ -49,7 +50,7 @@ class UserListViewModel @Inject constructor(
   fun orderByFilter(orderFilter: OrderFilter) {
     users = when (orderFilter) {
       OrderFilter.BY_NAME -> {
-        users.toList().sortedBy { it.name }.toMutableList()
+        users.toList().sortedBy { it.name.lowercase(Locale.getDefault()) }.toMutableList()
       }
       OrderFilter.BY_ID -> {
         users.toList().sortedBy { it.id }.toMutableList()

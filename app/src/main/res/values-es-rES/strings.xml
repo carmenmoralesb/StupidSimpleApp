@@ -7,7 +7,7 @@
   <string name="user_list__user_bday_title">"Cumpleaños: "</string>
   <string name="toolbar__reload_option_string">Recargar</string>
   <string name="toolbar_menu__order_name_option">Ordenar A-Z</string>
-  <string name="toolbar_menu__order_bday_option">Ordenar por fecha</string>
+  <string name="toolbar_menu__order_bday_option">Ordenar por identificador</string>
   <string name="user_detail__edit_btn_string">Editar</string>
   <string name="user_detail__example_description">Descripción</string>
   <string name="user_detail__add_user_icon_button">Botón de añadir usuario</string>

@@ -1,13 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
   <string name="app_name">StupidSimpleApp</string>
-  <!-- TODO: Remove or change this placeholder text -->
   <string name="user_list__user_photo_description">This is the user photo</string>
   <string name="user_list__user_id_title">Identifier :</string>
   <string name="user_list__user_name_title">Name :</string>
   <string name="user_list__user_bday_title">Birthday :</string>
   <string name="toolbar__reload_option_string">Reload</string>
   <string name="toolbar_menu__order_name_option">Order by name</string>
-  <string name="toolbar_menu__order_bday_option">Order by Birthday</string>
+  <string name="toolbar_menu__order_bday_option">Order by identifier</string>
   <string name="user_detail__edit_btn_string">Edit</string>
   <string name="user_detail__example_description">Description</string>
   <string name="user_detail__example_string" translatable="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
