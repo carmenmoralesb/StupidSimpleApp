@@ -13,6 +13,7 @@ https://hello-world.innocv.com/SWAGGER/
 * [x] MVVM
 * [x] Retrofit
 * [x] Gson
+* [x] Glide to load user images
 * [x] Timber
 * [x] ViewModel, LiveData, Lifecycle..
 * [x] Navigation Component
