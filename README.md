@@ -19,6 +19,7 @@ https://hello-world.innocv.com/SWAGGER/
 * [x] Navigation Component
 * [x] Material components & design
 * [x] Dagger Hilt
+* [x] Some Unit Testing
 
 ### Some notes
 - It supports dark mode and light mode if you choose system dark mode option. 🌙
