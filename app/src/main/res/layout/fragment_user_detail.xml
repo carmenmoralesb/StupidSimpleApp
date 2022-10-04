@@ -5,7 +5,7 @@
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:elevation="@dimen/dp4"
-  android:paddingBottom="16dp"
+  android:paddingBottom="@dimen/dp16"
   android:theme="@style/Theme.StupidSimpleApp">
 
 
@@ -13,7 +13,7 @@
     android:id="@+id/user_detail__btn__close"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="@dimen/dp16"
     android:contentDescription="@string/user_detail__close_desc"
     android:src="@drawable/ic_close"
     app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,7 @@
   <TextView
     android:id="@+id/user_detail__label__main_title"
     style="@style/Text.Bold.Body1"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/dp0"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/dp16"
     android:text="@string/user_detail__title_screen"
@@ -127,7 +127,7 @@
         android:id="@+id/user_detail__edit_placeholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="@dimen/dp16"
         android:visibility="gone"
         app:layout_constraintStart_toEndOf="@+id/user_detail__image__user_image"
         app:layout_constraintTop_toTopOf="@+id/user_detail__image__user_image"
